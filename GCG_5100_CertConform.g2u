@@ -1,0 +1,1052 @@
+Program.Sub.ScreenSU.Start
+Gui.F_CustConformCert..Create
+Gui.F_CustConformCert..Caption("Customer Conformance Cert")
+Gui.F_CustConformCert..Size(4965,6720)
+Gui.F_CustConformCert..MinX(0)
+Gui.F_CustConformCert..MinY(0)
+Gui.F_CustConformCert..Position(0,0)
+Gui.F_CustConformCert..BackColor(-2147483633)
+Gui.F_CustConformCert..MaxButton(False)
+Gui.F_CustConformCert..MousePointer(0)
+Gui.F_CustConformCert..Sizeable(False)
+Gui.F_CustConformCert..Event(UnLoad,F_CustConformCert_UnLoad)
+Gui.F_CustConformCert.frameConform.Create(Frame)
+Gui.F_CustConformCert.frameConform.Size(4785,5790)
+Gui.F_CustConformCert.frameConform.Position(30,0)
+Gui.F_CustConformCert.txtCust.Create(TextBox,"",True,1065,300,0,165,1020,True,0,"Arial",8,-2147483643,1)
+Gui.F_CustConformCert.txtCust.Parent("frameConform")
+Gui.F_CustConformCert.txtCust.MaxLength(6)
+Gui.F_CustConformCert.txtCust.Locked(True)
+Gui.F_CustConformCert.lblCust.Create(Label,"Customer",True,1050,255,0,150,810,True,0,"Arial",8,-2147483633,0)
+Gui.F_CustConformCert.lblCust.Parent("frameConform")
+Gui.F_CustConformCert.txtCustName.Create(TextBox,"",True,3195,300,0,1380,1020,True,0,"Arial",8,-2147483643,1)
+Gui.F_CustConformCert.txtCustName.Parent("frameConform")
+Gui.F_CustConformCert.txtCustName.Locked(True)
+Gui.F_CustConformCert.lblCustName.Create(Label,"Customer Name",True,1320,255,0,1365,810,True,0,"Arial",8,-2147483633,0)
+Gui.F_CustConformCert.lblCustName.Parent("frameConform")
+Gui.F_CustConformCert.txtText1.Create(TextboxM)
+Gui.F_CustConformCert.txtText1.Size(4500,2025)
+Gui.F_CustConformCert.txtText1.Position(120,1455)
+Gui.F_CustConformCert.txtText1.Parent("frameConform")
+Gui.F_CustConformCert.txtText1.MaxLength(50)
+Gui.F_CustConformCert.txtText2.Create(TextboxM)
+Gui.F_CustConformCert.txtText2.Size(4500,2025)
+Gui.F_CustConformCert.txtText2.Position(120,3630)
+Gui.F_CustConformCert.txtText2.Parent("frameConform")
+Gui.F_CustConformCert.txtText2.MaxLength(50)
+Gui.F_CustConformCert.txtPart.Create(TextBox,"",True,2220,300,0,165,405,True,0,"Arial",8,-2147483643,1)
+Gui.F_CustConformCert.txtPart.Parent("frameConform")
+Gui.F_CustConformCert.txtPart.MaxLength(20)
+Gui.F_CustConformCert.txtPart.Locked(True)
+Gui.F_CustConformCert.lblPart.Create(Label,"Part and Rev",True,1050,255,0,150,195,True,0,"Arial",8,-2147483633,0)
+Gui.F_CustConformCert.lblPart.Parent("frameConform")
+Gui.F_CustConformCert.cmdCust.Create(Button)
+Gui.F_CustConformCert.cmdCust.Size(1170,435)
+Gui.F_CustConformCert.cmdCust.Position(2835,330)
+Gui.F_CustConformCert.cmdCust.Parent("frameConform")
+Gui.F_CustConformCert.cmdCust.Caption("Select Cust")
+Gui.F_CustConformCert.cmdCust.Event(Click,cmdCust_Click)
+Gui.F_CustConformCert.cmdSave.Create(Button)
+Gui.F_CustConformCert.cmdSave.Size(1170,435)
+Gui.F_CustConformCert.cmdSave.Position(135,5880)
+Gui.F_CustConformCert.cmdSave.Caption("Save")
+Gui.F_CustConformCert.cmdSave.Event(Click,cmdSave_Click)
+Gui.F_CertPrint..Create
+Gui.F_CertPrint..Caption("Conformance Certificate Print")
+Gui.F_CertPrint..Size(10605,13485)
+Gui.F_CertPrint..MinX(0)
+Gui.F_CertPrint..MinY(0)
+Gui.F_CertPrint..Position(0,0)
+Gui.F_CertPrint..BackColor(-2147483633)
+Gui.F_CertPrint..MousePointer(0)
+Gui.F_CertPrint..Event(UnLoad,F_CertPrint_UnLoad)
+Gui.F_CertPrint..MaxButton(False)
+Gui.F_CertPrint..Sizeable(False)
+Gui.F_CertPrint.txtSO.Create(TextBox,"",True,1215,300,0,195,390,True,0,"Arial",8,-2147483643,1)
+Gui.F_CertPrint.txtSO.MaxLength(7)
+Gui.F_CertPrint.txtSO.NumericOnly(2)
+Gui.F_CertPrint.txtSO.TabStop(True)
+Gui.F_CertPrint.txtSO.TabIndex(1)
+Gui.F_CertPrint.lblSO.Create(Label,"Sales Order",True,1245,255,0,180,180,True,0,"Arial",8,-2147483633,0)
+Gui.F_CertPrint.txtLine.Create(TextBox,"",True,615,300,0,1590,390,True,0,"Arial",8,-2147483643,1)
+Gui.F_CertPrint.txtLine.MaxLength(4)
+Gui.F_CertPrint.txtLine.NumericOnly(2)
+Gui.F_CertPrint.txtLine.TabStop(True)
+Gui.F_CertPrint.txtLine.TabIndex(2)
+Gui.F_CertPrint.lblLine.Create(Label,"Line",True,615,255,0,1575,180,True,0,"Arial",8,-2147483633,0)
+Gui.F_CertPrint.cmdSOBRW.Create(Button)
+Gui.F_CertPrint.cmdSOBRW.Size(375,375)
+Gui.F_CertPrint.cmdSOBRW.Position(2385,360)
+Gui.F_CertPrint.cmdSOBRW.Caption("^")
+Gui.F_CertPrint.cmdSOBRW.Event(Click,cmdSOBRW_Click)
+Gui.F_CertPrint.cmdSOBRW.TabStop(True)
+Gui.F_CertPrint.cmdSOBRW.TabIndex(3)
+Gui.F_CertPrint.framePrint.Create(Frame)
+Gui.F_CertPrint.framePrint.Size(10230,11595)
+Gui.F_CertPrint.framePrint.Position(135,855)
+Gui.F_CertPrint.framePrint.Enabled(False)
+Gui.F_CertPrint.lblTitle.Create(Label,"Certificate of Compliance",True,3120,345,0,3555,375,True,2,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblTitle.Parent("framePrint")
+Gui.F_CertPrint.lblTitle.FontStyle(True,False,False,False,False)
+Gui.F_CertPrint.lblShipTo.Create(Label,"Ship To:",True,1020,330,0,90,855,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblShipTo.Parent("framePrint")
+Gui.F_CertPrint.txtShipTo.Create(TextboxM)
+Gui.F_CertPrint.txtShipTo.Size(9015,1275)
+Gui.F_CertPrint.txtShipTo.Position(1125,780)
+Gui.F_CertPrint.txtShipTo.Parent("framePrint")
+Gui.F_CertPrint.txtShipTo.FontSize(12)
+Gui.F_CertPrint.txtShipTo.TabStop(True)
+Gui.F_CertPrint.txtShipTo.TabIndex(6)
+Gui.F_CertPrint.lblDate.Create(Label,"Date:",True,765,330,0,90,2250,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblDate.Parent("framePrint")
+Gui.F_CertPrint.dtpDate.Create(DatePicker)
+Gui.F_CertPrint.dtpDate.Size(1935,285)
+Gui.F_CertPrint.dtpDate.Position(870,2130)
+Gui.F_CertPrint.dtpDate.Parent("framePrint")
+Gui.F_CertPrint.dtpDate.DefaultValue("")
+Gui.F_CertPrint.dtpDate.TabStop(True)
+Gui.F_CertPrint.dtpDate.TabIndex(7)
+Gui.F_CertPrint.dtpDate.FontSize(12)
+Gui.F_CertPrint.lblSOPrint.Create(Label,"Sales Order:",True,1440,330,0,5175,2250,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblSOPrint.Parent("framePrint")
+Gui.F_CertPrint.txtSOPrint.Create(TextBox,"",True,1395,390,0,6675,2145,True,0,"Arial",12,-2147483643,1)
+Gui.F_CertPrint.txtSOPrint.Parent("framePrint")
+Gui.F_CertPrint.txtSOPrint.TabStop(True)
+Gui.F_CertPrint.txtSOPrint.TabIndex(8)
+Gui.F_CertPrint.txtSOPrint.MaxLength(7)
+Gui.F_CertPrint.txtSOPrint.NumericOnly(2)
+Gui.F_CertPrint.txtSOPrint.Event(Change,txtSOPrint_Change)
+Gui.F_CertPrint.lblCustPO.Create(Label,"Customer PO:",True,1680,330,0,90,3120,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblCustPO.Parent("framePrint")
+Gui.F_CertPrint.txtCustPO.Create(TextBox,"",True,2565,390,0,1785,3000,True,0,"Arial",12,-2147483643,1)
+Gui.F_CertPrint.txtCustPO.Parent("framePrint")
+Gui.F_CertPrint.txtCustPO.TabStop(True)
+Gui.F_CertPrint.txtCustPO.TabIndex(9)
+Gui.F_CertPrint.txtCustPO.MaxLength(15)
+Gui.F_CertPrint.lblOrderDate.Create(Label,"Order Date:",True,1410,330,0,4455,3120,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblOrderDate.Parent("framePrint")
+Gui.F_CertPrint.dtpOrderDate.Create(DatePicker)
+Gui.F_CertPrint.dtpOrderDate.Size(1935,285)
+Gui.F_CertPrint.dtpOrderDate.Position(5880,3000)
+Gui.F_CertPrint.dtpOrderDate.Parent("framePrint")
+Gui.F_CertPrint.dtpOrderDate.TabStop(True)
+Gui.F_CertPrint.dtpOrderDate.TabIndex(10)
+Gui.F_CertPrint.dtpOrderDate.DefaultValue("")
+Gui.F_CertPrint.dtpOrderDate.FontSize(12)
+Gui.F_CertPrint.lblCustSpecs.Create(Label,"Customer Specifications:",True,2775,330,0,90,3465,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblCustSpecs.Parent("framePrint")
+Gui.F_CertPrint.txtCustSpec.Create(TextboxM)
+Gui.F_CertPrint.txtCustSpec.Size(7230,1020)
+Gui.F_CertPrint.txtCustSpec.Position(2910,3405)
+Gui.F_CertPrint.txtCustSpec.Parent("framePrint")
+Gui.F_CertPrint.txtCustSpec.FontSize(12)
+Gui.F_CertPrint.txtCustSpec.TabStop(True)
+Gui.F_CertPrint.txtCustSpec.TabIndex(11)
+Gui.F_CertPrint.gsGCLine.Create(GsGridControl)
+Gui.F_CertPrint.gsGCLine.Size(10050,1245)
+Gui.F_CertPrint.gsGCLine.Position(90,4440)
+Gui.F_CertPrint.gsGCLine.Parent("framePrint")
+Gui.F_CertPrint.gsGCLine.TabStop(True)
+Gui.F_CertPrint.gsGCLine.TabIndex(12)
+Gui.F_CertPrint.gsGCLine.Event(CellValueChanged,gsGCLine_CellValueChanged)
+Gui.F_CertPrint.gsGCControl.Create(GsGridControl)
+Gui.F_CertPrint.gsGCControl.Size(3555,3555)
+Gui.F_CertPrint.gsGCControl.Position(90,5835)
+Gui.F_CertPrint.gsGCControl.Parent("framePrint")
+Gui.F_CertPrint.gsGCControl.TabStop(True)
+Gui.F_CertPrint.gsGCControl.TabIndex(13)
+Gui.F_CertPrint.gsGCLotSerial.Create(GsGridControl)
+Gui.F_CertPrint.gsGCLotSerial.Size(6120,3555)
+Gui.F_CertPrint.gsGCLotSerial.Position(4020,5835)
+Gui.F_CertPrint.gsGCLotSerial.Parent("framePrint")
+Gui.F_CertPrint.gsGCLotSerial.TabStop(True)
+Gui.F_CertPrint.gsGCLotSerial.TabIndex(14)
+Gui.F_CertPrint.lblComments.Create(Label,"Comments:",True,1935,255,0,90,9645,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblComments.Parent("framePrint")
+Gui.F_CertPrint.txtComments.Create(TextboxM)
+Gui.F_CertPrint.txtComments.Size(10035,1020)
+Gui.F_CertPrint.txtComments.Position(90,9990)
+Gui.F_CertPrint.txtComments.Parent("framePrint")
+Gui.F_CertPrint.txtComments.TabStop(True)
+Gui.F_CertPrint.txtComments.TabIndex(15)
+Gui.F_CertPrint.txtComments.FontSize(12)
+Gui.F_CertPrint.lblInspector.Create(Label,"Inspector:",True,1140,255,0,90,11115,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblInspector.Parent("framePrint")
+Gui.F_CertPrint.txtInspector.Create(TextBox,"",True,3000,390,0,1305,11025,True,0,"Arial",12,-2147483643,1)
+Gui.F_CertPrint.txtInspector.Parent("framePrint")
+Gui.F_CertPrint.txtInspector.TabStop(True)
+Gui.F_CertPrint.txtInspector.TabIndex(15)
+Gui.F_CertPrint.lblDateInsp.Create(Label,"Date:",True,735,255,0,5100,11115,True,0,"Arial",12,-2147483633,0)
+Gui.F_CertPrint.lblDateInsp.Parent("framePrint")
+Gui.F_CertPrint.dtpDateInsp.Create(DatePicker)
+Gui.F_CertPrint.dtpDateInsp.Size(1935,285)
+Gui.F_CertPrint.dtpDateInsp.Position(5865,11025)
+Gui.F_CertPrint.dtpDateInsp.Parent("framePrint")
+Gui.F_CertPrint.dtpDateInsp.TabStop(True)
+Gui.F_CertPrint.dtpDateInsp.TabIndex(16)
+Gui.F_CertPrint.dtpDateInsp.FontSize(12)
+Gui.F_CertPrint.cmdGen.Create(Button)
+Gui.F_CertPrint.cmdGen.Size(1215,420)
+Gui.F_CertPrint.cmdGen.Position(3150,270)
+Gui.F_CertPrint.cmdGen.TabStop(True)
+Gui.F_CertPrint.cmdGen.TabIndex(4)
+Gui.F_CertPrint.cmdGen.Caption("New Cert")
+Gui.F_CertPrint.cmdGen.Event(Click,cmdGen_Click)
+Gui.F_CertPrint.cmdPrint.Create(Button)
+Gui.F_CertPrint.cmdPrint.Enabled(False)
+Gui.F_CertPrint.cmdPrint.Size(1215,420)
+Gui.F_CertPrint.cmdPrint.Position(270,12615)
+Gui.F_CertPrint.cmdPrint.TabStop(True)
+Gui.F_CertPrint.cmdPrint.TabIndex(18)
+Gui.F_CertPrint.cmdPrint.Caption("Print")
+Gui.F_CertPrint.cmdPrint.Event(Click,cmdPrint_Click)
+Gui.F_CertPrint.cmdRegen.Create(Button)
+Gui.F_CertPrint.cmdRegen.Size(1215,420)
+Gui.F_CertPrint.cmdRegen.Position(4560,270)
+Gui.F_CertPrint.cmdRegen.TabStop(True)
+Gui.F_CertPrint.cmdRegen.TabIndex(5)
+Gui.F_CertPrint.cmdRegen.Caption("Load Cert")
+Gui.F_CertPrint.cmdRegen.Event(Click,cmdRegen_Click)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Author: Bix
+'Date: 6/25/2018
+'Customer: Litron
+'GCG_5100_CertConform.g2u
+'This script will launch a screen from the Script 1 button from the Customer header that will contain two fields. A custom menu item will launch a custom screen that will mirror the conformance report that will allow the user to enter information for specific sales order lines and bring in the two extra lines for the customer. After entering the data, the user will be able to print a PDF of the custom report.
+V.Local..BulkDeclareString(sError,sPart)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+	'F.Intrinsic.Control.Case(14350)
+	F.Intrinsic.Control.Case(10120)
+		'Populate hook for the inventory master header - set SCRIPT 1 caption
+		V.Passed.000068.Set("Cert Conform")
+	'F.Intrinsic.Control.Case(14360)
+	F.Intrinsic.Control.Case(10210)
+		'SCRIPT 1 button hook for inventory master header
+		'Get the Part
+		F.Intrinsic.String.GSSPartString(V.Passed.000007.RTrim,V.Passed.000008.RTrim,V.Local.sPart)
+		'Pass to function for getting information from custom table and displaying it in GUI
+		F.Intrinsic.Control.CallSub(CertCustScreen,"sPart",V.Local.sPart)
+	F.Intrinsic.Control.CaseElse
+		F.Intrinsic.Control.If(V.Caller.Hook,>=,1000000)
+			'Launch custom menu item
+			F.Intrinsic.Control.CallSub(CertPrintScreen)
+		F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+
+Program.Sub.OpenConnection.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+F.ODBC.Connection!con.OpenCompanyConnection
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {3}->{2}{1}Error Occurred {4} with description {5}{1}{1}GAB Version: {6}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Args.sOtherSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.OpenConnection.End
+
+Program.Sub.CloseConnection.Start
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+F.ODBC.Connection!con.Close
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {3}->{2}{1}Error Occurred {4} with description {5}{1}{1}GAB Version: {6}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Args.sOtherSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.CloseConnection.End
+
+Program.Sub.CertCustScreen.Start
+'Gets saved text for customer or allows user to enter new text
+V.Local.sError.Declare(String)
+'V.Args.sPart (String) passed part
+F.Intrinsic.Control.Try
+
+'checks that user is on the Open or New screen otherwise disable editing power
+F.Intrinsic.Control.If(V.Caller.Switches,!=,"O","and",V.Caller.Switches,!=,"N")
+	Gui.F_CustConformCert.txtText1.Enabled(False)
+	Gui.F_CustConformCert.txtText2.Enabled(False)
+	Gui.F_CustConformCert.cmdSave.Enabled(False)
+F.Intrinsic.Control.EndIf
+
+Gui.F_CustConformCert.txtPart.Text(V.Args.sPart)
+
+Gui.F_CustConformCert..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.CertCustScreen.End
+
+Program.Sub.F_CustConformCert_UnLoad.Start
+'Close out DT and End program to return to header screen
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.DataTable.dtText.Exists)
+	F.Data.DataTable.Close("dtText")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.F_CustConformCert_UnLoad.End
+
+Program.Sub.cmdSave_Click.Start
+'Saves text fields to DT and then saves DT to DB
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.If(V.Screen.F_CustConformCert!txtCust.Text,=,"","or",V.Screen.F_CustConformCert!txtPart.Text,=,"")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Data.DataTable.SetValue("dtText",0,"TEXT1",V.Screen.F_CustConformCert!txtText1.Text,"TEXT2",V.Screen.F_CustConformCert!txtText2.Text)
+
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Data.DataTable.SaveToDB("dtText","con","GCG_5100_CUSTCONFORM","CUSTOMER*!*PART",256,"CUSTOMER@!@CUSTOMER*!*PART@!@PART*!*TEXT1@!@TEXT1*!*TEXT2@!@TEXT2")
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+'F.Data.DataTable.AcceptChanges("dtText")
+F.Intrinsic.String.Build("select CUSTOMER, PART, TEXT1, TEXT2 from GCG_5100_CUSTCONFORM where CUSTOMER = '{0}' and PART = '{1}';",V.DataTable.dtText(0).CUSTOMER!FieldValTrim,V.DataTable.dtText(0).PART!FieldValTrim,V.Local.sSQL)
+F.Data.DataTable.Close("dtText")
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Data.DataTable.CreateFromSQL("dtText","con",V.Local.sSQL,True)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+F.Intrinsic.UI.Msgbox("Saved!")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.CertPrintScreen.Start
+'Opens the Conformance Certificate Print screen from Custom Menu Item
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+'Gui.F_CertPrint.dtpDate.Value(V.Ambient.MinDate)
+'Gui.F_CertPrint.dtpOrderDate.Value(V.Ambient.MinDate)
+'Gui.F_CertPrint.dtpDateInsp.Value(V.Ambient.MinDate)
+
+Gui.F_CertPrint.dtpDate.Value("01/01/1900")
+Gui.F_CertPrint.dtpOrderDate.Value("01/01/1900")
+Gui.F_CertPrint.dtpDateInsp.Value("01/01/1900")
+
+Gui.F_CertPrint..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.CertPrintScreen.End
+
+Program.Sub.cmdSOBRW_Click.Start
+'Opens browser for Sales Order Lines
+V.Local..BulkDeclareString(sError,sRet)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Intrinsic.UI.Browser("Sales Order Lines","con","select ORDER_NO, RECORD_NO, CUSTOMER, PART, QTY_ORDERED, QTY_BO from V_ORDER_LINES where RECORD_TYPE = 'L' order by ORDER_NO, RECORD_NO;","Sales Order*!*Line*!*Customer*!*Part*!*Order Qty*!*BO Qty","20*!*5*!*20*!*30*!*15*!*15",V.Local.sRet)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+F.Intrinsic.Control.If(V.Local.sRet.IsCancel,=,False)
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_CertPrint.txtSO.Text(V.Local.sRet(0))
+	Gui.F_CertPrint.txtLine.Text(V.Local.sRet(1))
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSOBRW_Click.End
+
+Program.Sub.F_CertPrint_UnLoad.Start
+'End program on print window close
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.F_CertPrint_UnLoad.End
+
+Program.Sub.cmdGen_Click.Start
+'Populates screen with Sales Order Line/Customer Info
+V.Local..BulkDeclareString(sError,sSO,sLine,sSQL,sShip)
+F.Intrinsic.Control.Try
+
+Gui.F_CertPrint.framePrint.Enabled(False)
+Gui.F_CertPrint.cmdPrint.Enabled(False)
+
+V.Local.sSO.Set(V.Screen.F_CertPrint!txtSO.Text)
+V.Local.sLine.Set(V.Screen.F_CertPrint!txtLine.Text)
+
+'If entered values don't match format for sales orders and lines, make them match
+F.Intrinsic.Control.If(V.Local.sSO.Length,!=,7)
+	F.Intrinsic.String.LPad(V.Local.sSO,"0",7,V.Local.sSO)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Local.sLine.Length,!=,4)
+	F.Intrinsic.String.Build("{0}0",V.Local.sLine,V.Local.sLine)
+	F.Intrinsic.String.LPad(V.Local.sLine,"0",4,V.Local.sLine)
+F.Intrinsic.Control.EndIf
+
+'Check if global tables are open
+F.Intrinsic.Control.If(V.DataTable.dtLine.Exists)
+	F.Data.DataTable.Close("dtLine")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.DataTable.dtControl.Exists)
+	F.Data.DataTable.Close("dtControl")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.DataTable.dtLotSerial.Exists)
+	F.Data.DataTable.Close("dtLotSerial")
+F.Intrinsic.Control.EndIf
+
+'Extract data from specific tables
+F.Intrinsic.String.Build("select left('{0}', 3) as 'ITEM', QTY_ORDERED as 'QTY', rtrim(left(PART, 17)) as 'PART_NUMBER', rtrim(right(PART, 3)) as 'REV', rtrim(DESCRIPTION) as 'DESCRIPTION', 0 as 'ACC', 0 as 'REJ', DATE_ORDER from V_ORDER_LINES where RECORD_NO = '{0}' and ORDER_NO = '{1}';",V.Local.sLine,V.Local.sSO,V.Local.sSQL)
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Data.DataTable.CreateFromSQL("dtLine","con",V.Local.sSQL,True)
+'Check if given order returned values
+F.Intrinsic.Control.If(V.DataTable.dtLine.RowCount,=,0)
+	F.Intrinsic.String.Build("No entry found for Order {0} and Line {1}.",V.Local.sSO,V.Local.sLine,V.Local.sSQL)
+	F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+	F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.Intrinsic.String.Build("select NAME_CUSTOMER_SHIP, ADDRESS_1_SHIP, ADDRESS_2_SHIP, ADDRESS_3_SHIP, ADDRESS_4_SHIP, ADDRESS_5_SHIP, CITY_SHIP, STATE_SHIP, CODE_ZIP_SHIP, COUNTRY_SHIP from V_ORDER_SHIP_TO where ORDER_NO = '{0}';",V.Local.sSO,V.Local.sSQL)
+F.Data.DataTable.CreateFromSQL("dtShip","con",V.Local.sSQL)
+F.Intrinsic.String.Build("select CUSTOMER, CUSTOMER_PO from V_ORDER_HEADER where ORDER_NO = '{0}';",V.Local.sSO,V.Local.sSQL)
+F.Data.DataTable.CreateFromSQL("dtHead","con",V.Local.sSQL)
+F.Intrinsic.String.Build("select TEXT1, TEXT2 from GCG_5100_CUSTCONFORM where CUSTOMER = '{0}' and left(PART, 17) = '{1}' and right(PART, 3) = '{2}';",V.DataTable.dtHead(0).CUSTOMER!FieldValTrim,V.DataTable.dtLine(0).PART_NUMBER!FieldValTrim,V.DataTable.dtLine(0).REV!FieldValTrim,V.Local.sSQL)
+F.Data.DataTable.CreateFromSQL("dtText","con",V.Local.sSQL)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+F.Data.DataTable.CreateFromString("dtControl","*!*#$#*!*#$#*!*#$#*!*#$#*!*#$#*!*#$#*!*#$#*!*#$#*!*#$#*!*","CONTROL*!*QTY","String*!*String","*!*","#$#",True)
+F.Data.DataTable.CreateFromString("dtLotSerial","#$##$##$##$##$##$##$##$##$#","LOTSERIAL","String","*!*","#$#",True)
+
+Gui.F_CertPrint.txtSOPrint.Text(V.Local.sSO)
+Gui.F_CertPrint.dtpDate.Value(V.Ambient.Now)
+Gui.F_CertPrint.txtComments.Text("I CERTIFY THAT THE PARTS ON THIS PURCHASE ORDER HAVE BEEN PROCESSED IN ACCORDANCE WITH THE SPECIFICATIONS AS DETAILED ON THE BLUEPRINT.")
+Gui.F_CertPrint.txtInspector.Text("Enter First and Last Name")
+Gui.F_CertPrint.dtpDateInsp.Value(V.Ambient.Now)
+
+'Combine ship to information to write to text box
+V.Local.sShip.Set(V.DataTable.dtShip(0).NAME_CUSTOMER_SHIP!FieldValTrim)
+'Attach Address 1 if not blank
+F.Intrinsic.Control.If(V.DataTable.dtShip(0).ADDRESS_1_SHIP!FieldValTrim,!=,"")
+	F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).ADDRESS_1_SHIP!FieldValTrim,V.Local.sShip)
+	'Attach Address 2 if not blank
+	F.Intrinsic.Control.If(V.DataTable.dtShip(0).ADDRESS_2_SHIP!FieldValTrim,!=,"")
+		F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).ADDRESS_2_SHIP!FieldValTrim,V.Local.sShip)
+		'Attach Address 3 if not blank
+		F.Intrinsic.Control.If(V.DataTable.dtShip(0).ADDRESS_3_SHIP!FieldValTrim,!=,"")
+			F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).ADDRESS_3_SHIP!FieldValTrim,V.Local.sShip)
+			'Attach Address 4 if not blank
+			F.Intrinsic.Control.If(V.DataTable.dtShip(0).ADDRESS_4_SHIP!FieldValTrim,!=,"")
+				F.Intrinsic.String.Build("{0}{1}{2}{1}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).ADDRESS_4_SHIP!FieldValTrim,V.Local.sShip)
+				'Attach Address 5 and extra line if not blank
+				F.Intrinsic.Control.If(V.DataTable.dtShip(0).ADDRESS_5_SHIP!FieldValTrim,!=,"")
+					F.Intrinsic.String.Build("{0}{1}{2}{1}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).ADDRESS_5_SHIP!FieldValTrim,V.Local.sShip)
+				F.Intrinsic.Control.Else
+					'Add extra line if Address 5 is blank then exit 'if' tree
+					F.Intrinsic.String.Build("{0}{1}",V.Local.sShip,V.Ambient.NewLine,V.Local.sShip)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Else
+				'Add extra line if Address 4 is blank then exit 'if' tree
+				F.Intrinsic.String.Build("{0}{1}",V.Local.sShip,V.Ambient.NewLine,V.Local.sShip)
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.Else
+			'Add extra line if Address 3 is blank then exit 'if' tree
+			F.Intrinsic.String.Build("{0}{1}",V.Local.sShip,V.Ambient.NewLine,V.Local.sShip)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		'Add extra line if Address 2 is blank then exit 'if' tree
+		F.Intrinsic.String.Build("{0}{1}",V.Local.sShip,V.Ambient.NewLine,V.Local.sShip)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Else
+	'Add extra line if Address is blank then exit 'if' tree
+	F.Intrinsic.String.Build("{0}{1}",V.Local.sShip,V.Ambient.NewLine,V.Local.sShip)
+F.Intrinsic.Control.EndIf
+'Add city, state and ZIP
+F.Intrinsic.String.Build("{0}{1}{2}, {3} {4}",V.Local.sShip,V.Ambient.NewLine,V.DataTable.dtShip(0).CITY_SHIP!FieldValTrim,V.DataTable.dtShip(0).STATE_SHIP!FieldValTrim,V.DataTable.dtShip(0).CODE_ZIP_SHIP!FieldValTrim,V.Local.sShip)
+Gui.F_CertPrint.txtShipTo.Text(V.Local.sShip)
+F.Data.DataTable.Close("dtShip")
+
+'Write information from Header table
+Gui.F_CertPrint.txtCustPO.Text(V.DataTable.dtHead(0).CUSTOMER_PO!FieldValTrim)
+F.Data.DataTable.Close("dtHead")
+
+'Write information for custom customer text
+F.Intrinsic.Control.If(V.DataTable.dtText.RowCount,!=,0)
+	F.Intrinsic.String.Build("{1}{0}{2}",V.Ambient.NewLine,V.DataTable.dtText(0).TEXT1!FieldValTrim,V.DataTable.dtText(0).TEXT2!FieldValTrim,V.Local.sSQL)
+	Gui.F_CertPrint.txtCustSpec.Text(V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.Close("dtText")
+
+'Get date info from line entry and then drop the column
+Gui.F_CertPrint.dtpOrderDate.Value(V.DataTable.dtLine(0).DATE_ORDER!FieldVal)
+F.Data.DataTable.RemoveColumn("dtLine","DATE_ORDER")
+
+'Add line data as girdview to Gridcontrol
+Gui.F_CertPrint.gsGCLine.AddGridviewFromDatatable("gvLine","dtLine")
+Gui.F_CertPrint.gsGCControl.AddGridviewFromDatatable("gvControl","dtControl")
+Gui.F_CertPrint.gsGCLotSerial.AddGridviewFromDatatable("gvLotSerial","dtLotSerial")
+F.Intrinsic.Control.CallSub(GridViewStyle)
+Gui.F_CertPrint.gsGCLine.MainView("gvLine")
+Gui.F_CertPrint.gsGCControl.MainView("gvControl")
+Gui.F_CertPrint.gsGCLotSerial.MainView("gvLotSerial")
+
+'Enable fields for editing
+Gui.F_CertPrint.framePrint.Enabled(True)
+Gui.F_CertPrint.cmdPrint.Enabled(True)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdGen_Click.End
+
+Program.Sub.GridViewStyle.Start
+'Creates styles for GSGridControls
+V.Local.sError.Declare(String)
+F.Intrinsic.Control.Try
+
+Gui.F_CertPrint.gsGCLine.SuspendLayout
+Gui.F_CertPrint.gsGCControl.SuspendLayout
+Gui.F_CertPrint.gsGCLotSerial.SuspendLayout
+
+'gvLine
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","Editable",True)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","Readonly",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","AllowSort",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","AllowFilter",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","ShowGroupPanel",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","AllowColumnResizing",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","AllowDeleteRows",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","AllowColumnMoving",False)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","OptionsViewRowAutoHeight",True)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","ColumnPanelRowHeight",25)
+Gui.F_CertPrint.gsGCLine.SetGridviewProperty("gvLine","ShowDetailTabs",False)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","Caption","Item")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","Caption","Qty")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","Caption","Part Number")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","Caption","Rev")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","Caption","Description")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","Caption","Acc")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","Caption","Rej")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","AllowEdit",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","AllowEdit",True)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","ReadOnly",False)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","ReadOnly",False)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","Width",1)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","Width",1)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","Width",50)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","Width",1)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","Width",76)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","Width",1)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","Width",1)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","HeaderFontSize",10)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","HeaderFontBold",True)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","HeaderHAlignment","Center")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","CellFontSize",10)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","CellFontSize",10)
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","CellHAlignment","Center")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","CellHAlignment","Far")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","CellHAlignment","Near")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","CellHAlignment","Near")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","CellHAlignment","Near")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","CellHAlignment","Far")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","CellHAlignment","Far")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ITEM","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","PART_NUMBER","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REV","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","CellVAlignment","Top")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","CellVAlignment","Top")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","DESCRIPTION","CellWordWrap","wrap")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","EditMaskType","numeric")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","EditMaskType","numeric")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","EditMaskType","numeric")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","EditMask","###########0")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","EditMask","###########0")
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","EditMask","###########0")
+
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","QTY","EditMaskAsDisplayFormat",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","ACC","EditMaskAsDisplayFormat",True)
+Gui.F_CertPrint.gsGCLine.SetColumnProperty("gvLine","REJ","EditMaskAsDisplayFormat",True)
+
+'gvControl
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","Editable",True)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","Readonly",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","AllowSort",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","AllowFilter",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","ShowGroupPanel",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","AllowColumnResizing",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","AllowDeleteRows",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","AllowColumnMoving",False)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","ColumnPanelRowHeight",25)
+Gui.F_CertPrint.gsGCControl.SetGridviewProperty("gvControl","ShowDetailTabs",False)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","Caption","Control Number")
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","Caption","Qty")
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","AllowEdit",True)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","AllowEdit",True)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","ReadOnly",False)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","ReadOnly",False)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","Width",50)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","Width",10)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","HeaderFontSize",10)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","HeaderFontSize",10)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","HeaderFontBold",True)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","HeaderFontBold",True)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","HeaderHAlignment","Center")
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","HeaderHAlignment","Center")
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","CellFontSize",10)
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","CellFontSize",10)
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","CONTROL","CellHAlignment","Near")
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","CellHAlignment","Far")
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","EditMaskType","numeric")
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","EditMask","############")
+
+Gui.F_CertPrint.gsGCControl.SetColumnProperty("gvControl","QTY","EditMaskAsDisplayFormat",True)
+
+'gvLotSerial
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","Editable",True)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","Readonly",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","AllowSort",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","AllowFilter",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","ShowGroupPanel",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","AllowColumnResizing",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","AllowDeleteRows",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","AllowColumnMoving",False)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","ColumnPanelRowHeight",25)
+Gui.F_CertPrint.gsGCLotSerial.SetGridviewProperty("gvLotSerial","ShowDetailTabs",False)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","Caption","Lot Number / Serial Numbers")
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","AllowEdit",True)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","ReadOnly",False)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","Width",20)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","HeaderFontSize",10)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","HeaderFontBold",True)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","HeaderHAlignment","Center")
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","CellFontSize",10)
+
+Gui.F_CertPrint.gsGCLotSerial.SetColumnProperty("gvLotSerial","LOTSERIAL","CellHAlignment","Near")
+
+Gui.F_CertPrint.gsGCLine.ResumeLayout
+Gui.F_CertPrint.gsGCControl.ResumeLayout
+Gui.F_CertPrint.gsGCLotSerial.ResumeLayout
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.GridViewStyle.End
+
+Program.Sub.gsGCLine_CellValueChanged.Start
+'Checks for character limit and trims field at the same time
+V.Local..BulkDeclareString(sError,sText)
+V.Local.fNum.Declare(Float)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.SelectCase(V.Args.Column)
+	F.Intrinsic.Control.Case("ITEM")
+		'Keeps ITEM field 3 characters in length
+		V.Local.sText.Set(V.DataTable.dtLine(V.Args.RowHandle).ITEM!FieldValTrim)
+		F.Intrinsic.Control.If(V.Local.sText.Length,<,3)
+			F.Intrinsic.String.LPad(V.Local.sText,"0",3,V.Local.sText)
+		F.Intrinsic.Control.ElseIf(V.Local.sText.Length,>,3)
+			F.Intrinsic.String.Left(V.Local.sText,3,V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"ITEM",V.Local.sText)
+	F.Intrinsic.Control.Case("QTY")
+		'Keeps Qty above 0
+		V.Local.fNum.Set(V.DataTable.dtLine(V.Args.RowHandle).QTY!FieldVal)
+		F.Intrinsic.Control.If(V.Local.fNum,<,0)
+			V.Local.fNum.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"QTY",V.Local.fNum)
+	F.Intrinsic.Control.Case("PART_NUMBER")
+		'Keeps Part No 17 chars in length or lower
+		V.Local.sText.Set(V.DataTable.dtLine(V.Args.RowHandle).PART_NUMBER!FieldValTrim)
+		F.Intrinsic.Control.If(V.Local.sText.Length,>,17)
+			F.Intrinsic.String.Left(V.Local.sText,17,V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"PART_NUMBER",V.Local.sText)
+	F.Intrinsic.Control.Case("REV")
+		'Keeps Rev 3 chars in length or lower
+		V.Local.sText.Set(V.DataTable.dtLine(V.Args.RowHandle).REV!FieldValTrim)
+		F.Intrinsic.Control.If(V.Local.sText.Length,>,3)
+			F.Intrinsic.String.Left(V.Local.sText,3,V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"REV",V.Local.sText)
+	F.Intrinsic.Control.Case("DESCRIPTION")
+		'Keeps Description 30 chars in length or lower
+		V.Local.sText.Set(V.DataTable.dtLine(V.Args.RowHandle).DESCRIPTION!FieldValTrim)
+		F.Intrinsic.Control.If(V.Local.sText.Length,>,30)
+			F.Intrinsic.String.Left(V.Local.sText,30,V.Local.sText)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"DESCRIPTION",V.Local.sText.Trim)
+	F.Intrinsic.Control.Case("ACC")
+		'Keeps Acc above 0
+		V.Local.fNum.Set(V.DataTable.dtLine(V.Args.RowHandle).ACC!FieldVal)
+		F.Intrinsic.Control.If(V.Local.fNum,<,0)
+			V.Local.fNum.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"ACC",V.Local.fNum)
+	F.Intrinsic.Control.Case("REJ")
+		'Keeps Rej above 0
+		V.Local.fNum.Set(V.DataTable.dtLine(V.Args.RowHandle).REJ!FieldVal)
+		F.Intrinsic.Control.If(V.Local.fNum,<,0)
+			V.Local.fNum.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.SetValue("dtLine",V.Args.RowHandle,"REJ",V.Local.fNum)
+F.Intrinsic.Control.EndSelect
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.gsGCLine_CellValueChanged.End
+
+Program.Sub.txtSOPrint_Change.Start
+'Insurance that SO field has left padded zeros; text box has built in character limit
+V.Local..BulkDeclareString(sError,sText)
+F.Intrinsic.Control.Try
+
+V.Local.sText.Set(V.Screen.F_CertPrint!txtSOPrint.Text.Trim)
+F.Intrinsic.Control.If(V.Local.sText.Length,<,7)
+	F.Intrinsic.String.LPad(V.Local.sText,"0",7,V.Local.sText)
+F.Intrinsic.Control.EndIf
+Gui.F_CertPrint.txtSOPrint.Text(V.Local.sText)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.txtSOPrint_Change.End
+
+Program.Sub.cmdPrint_Click.Start
+'Saves information to custom table and then runs report
+V.Local..BulkDeclareString(sError,sSQL,sRet,sParams,sValues)
+V.Local..BulkDeclareLong(iCnt,iCntPlus)
+V.Local.fDif.Declare(Float,0)
+V.Local.fQty.Declare(Float)
+V.Local.fTotal.Declare(Float,0)
+F.Intrinsic.Control.Try
+
+F.Intrinsic.Control.BlockEvents
+
+F.Intrinsic.Math.Sub(V.DataTable.dtLine(0).QTY!FieldVal,V.DataTable.dtLine(0).ACC!FieldVal,V.Local.fDif)
+'Cycle through control quantites and add them up to get a total
+F.Intrinsic.Control.For(V.Local.iCnt,V.DataTable.dtControl.RowCount--,0,-1)
+	F.Intrinsic.Math.ConvertToFloat(V.DataTable.dtControl(V.Local.iCnt).QTY!FieldValTrim,V.Local.fQty)
+	F.Intrinsic.Math.Add(V.Local.fTotal,V.Local.fQty,V.Local.fTotal)
+F.Intrinsic.Control.Next(V.Local.iCnt)
+'If the Inspector field has not been changed, exit sub
+F.Intrinsic.Control.If(V.Screen.F_CertPrint!txtInspector.Text.Trim,=,"Enter First and Last Name")
+	F.Intrinsic.UI.Msgbox("Please enter a first and last name for the inspector")
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.ExitSub
+'If accepted and rejected quantites do not sum to equal quantity on order, exit sub
+F.Intrinsic.Control.ElseIf(V.Local.fDif,!=,V.DataTable.dtLine(0).REJ!FieldVal)
+	F.Intrinsic.UI.Msgbox("Accepted and Rejected quantities do not add up to Quantity on order")
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.ExitSub
+'If control quantities do not sum to equal quantity on order, exit sub
+F.Intrinsic.Control.ElseIf(V.Local.fTotal,!=,V.DataTable.dtLine(0).QTY!FieldVal)
+	F.Intrinsic.UI.Msgbox("Control Number quantities do no add up to Quantity on order")
+	F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select 1 from GCG_5100_CERTCONFORM where ORDER_NO = '{0}' and LINE = '{1}';",V.Screen.F_CertPrint!txtSOPrint.Text,V.DataTable.dtLine(0).ITEM!FieldValTrim,V.Local.sSQL)
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,=,"")
+	'Nothing has been saved for this SO/Line
+	'Author note: this part is kind of a mess so I divided the value inserts into sections to help with readability
+	V.Local.sSQL.Set("insert into GCG_5100_CERTCONFORM (ORDER_NO, LINE, PART, REV, DESCRIPTION, QTY, ACC, REJ, ORDER_DATE, CUST_PO, CUST_SPECS, SHIP_TO, COMMENTS, INSPECTOR, DATE1, DATE2, CONTROL_NO1, CONTROL_NO2, CONTROL_NO3, CONTROL_NO4, CONTROL_NO5, CONTROL_NO6, CONTROL_NO7, CONTROL_NO8, CONTROL_NO9, CONTROL_NO10, CONTROL_QTY1, CONTROL_QTY2, CONTROL_QTY3, CONTROL_QTY4, CONTROL_QTY5, CONTROL_QTY6, CONTROL_QTY7, CONTROL_QTY8, CONTROL_QTY9, CONTROL_QTY10, LOTSERIAL1, LOTSERIAL2, LOTSERIAL3, LOTSERIAL4, LOTSERIAL5, LOTSERIAL6, LOTSERIAL7, LOTSERIAL8, LOTSERIAL9, LOTSERIAL10) values")
+	F.Intrinsic.String.Build("{0} ('{1}', '{2}', '{3}', '{4}', '{5}', {6}, {7}, {8}, '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}',",V.Local.sSQL,V.Screen.F_CertPrint!txtSOPrint.Text,V.DataTable.dtLine(0).ITEM!FieldValTrim,V.DataTable.dtLine(0).PART_NUMBER!FieldValTrim,V.DataTable.dtLine(0).REV!FieldValTrim,V.DataTable.dtLine(0).DESCRIPTION!FieldValTrim,V.DataTable.dtLine(0).QTY!FieldVal,V.DataTable.dtLine(0).ACC!FieldVal,V.DataTable.dtLine(0).REJ!FieldVal,V.Screen.F_CertPrint!dtpOrderDate.Text.PervasiveDate,V.Screen.F_CertPrint!txtCustPO.Text.Trim,V.Screen.F_CertPrint!txtCustSpec.Text.Trim,V.Screen.F_CertPrint!txtShipTo.Text.Trim,V.Screen.F_CertPrint!txtComments.Text.Trim,V.Screen.F_CertPrint!txtInspector.Text.Trim,V.Screen.F_CertPrint!dtpDate.Text.PervasiveDate,V.Screen.F_CertPrint!dtpDateInsp.Text.PervasiveDate,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}',",V.Local.sSQL,V.DataTable.dtControl(0).CONTROL!FieldValTrim,V.DataTable.dtControl(1).CONTROL!FieldValTrim,V.DataTable.dtControl(2).CONTROL!FieldValTrim,V.DataTable.dtControl(3).CONTROL!FieldValTrim,V.DataTable.dtControl(4).CONTROL!FieldValTrim,V.DataTable.dtControl(5).CONTROL!FieldValTrim,V.DataTable.dtControl(6).CONTROL!FieldValTrim,V.DataTable.dtControl(7).CONTROL!FieldValTrim,V.DataTable.dtControl(8).CONTROL!FieldValTrim,V.DataTable.dtControl(9).CONTROL!FieldValTrim,V.Local.sSQL)
+	'need to parse 'blank' values for control qty
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtControl.RowCount--,1)
+		F.Intrinsic.Control.If(V.DataTable.dtControl(V.Local.iCnt).QTY!FieldVal,=,0)
+			F.Intrinsic.String.Build("{0} 0,",V.Local.sSQL,V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0} {1},",V.Local.sSQL,V.DataTable.dtControl(V.Local.iCnt).QTY!FieldVal,V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.String.Build("{0} '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}');",V.Local.sSQL,V.DataTable.dtLotSerial(0).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(1).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(2).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(3).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(4).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(5).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(6).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(7).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(8).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(9).LOTSERIAL!FieldValTrim,V.Local.sSQL)
+F.Intrinsic.Control.Else
+	'There is already cert info that has been saved to this SO/Line
+	V.Local.sSQL.Set("update GCG_5100_CERTCONFORM set")
+	F.Intrinsic.String.Build("{0} PART = '{1}', REV = '{2}', DESCRIPTION = '{3}',",V.Local.sSQL,V.DataTable.dtLine(0).PART_NUMBER!FieldValTrim,V.DataTable.dtLine(0).REV!FieldValTrim,V.DataTable.dtLine(0).DESCRIPTION!FieldValTrim,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} QTY = {1},",V.Local.sSQL,V.DataTable.dtLine(0).QTY!FieldVal,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} ACC = {1},",V.Local.sSQL,V.DataTable.dtLine(0).ACC!FieldVal,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} REJ = {1},",V.Local.sSQL,V.DataTable.dtLine(0).REJ!FieldVal,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} ORDER_DATE = '{1}', CUST_PO = '{2}', CUST_SPECS = '{3}', SHIP_TO = '{4}', COMMENTS = '{5}', INSPECTOR = '{6}', DATE1 = '{7}', DATE2 = '{8}',",V.Local.sSQL,V.Screen.F_CertPrint!dtpOrderDate.Text.PervasiveDate,V.Screen.F_CertPrint!txtCustPO.Text.Trim,V.Screen.F_CertPrint!txtCustSpec.Text.Trim,V.Screen.F_CertPrint!txtShipTo.Text.Trim,V.Screen.F_CertPrint!txtComments.Text.Trim,V.Screen.F_CertPrint!txtInspector.Text.Trim,V.Screen.F_CertPrint!dtpDate.Text.PervasiveDate,V.Screen.F_CertPrint!dtpDateInsp.Text.PervasiveDate,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} CONTROL_NO1 = '{1}', CONTROL_NO2 = '{2}', CONTROL_NO3 = '{3}', CONTROL_NO4 = '{4}', CONTROL_NO5 = '{5}', CONTROL_NO6 = '{6}', CONTROL_NO7 = '{7}', CONTROL_NO8 = '{8}', CONTROL_NO9 = '{9}', CONTROL_NO10 = '{10}',",V.Local.sSQL,V.DataTable.dtControl(0).CONTROL!FieldValTrim,V.DataTable.dtControl(1).CONTROL!FieldValTrim,V.DataTable.dtControl(2).CONTROL!FieldValTrim,V.DataTable.dtControl(3).CONTROL!FieldValTrim,V.DataTable.dtControl(4).CONTROL!FieldValTrim,V.DataTable.dtControl(5).CONTROL!FieldValTrim,V.DataTable.dtControl(6).CONTROL!FieldValTrim,V.DataTable.dtControl(7).CONTROL!FieldValTrim,V.DataTable.dtControl(8).CONTROL!FieldValTrim,V.DataTable.dtControl(9).CONTROL!FieldValTrim,V.Local.sSQL)
+	'need to parse 'blank' values for control qty
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtControl.RowCount--,1)
+		F.Intrinsic.Math.Add(V.Local.iCnt,1,V.Local.iCntPlus)
+		F.Intrinsic.Control.If(V.DataTable.dtControl(V.Local.iCnt).QTY!FieldVal,=,0)
+			F.Intrinsic.String.Build("{0} CONTROL_QTY{1} = 0,",V.Local.sSQL,V.Local.iCntPlus,V.Local.sSQL)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0} CONTROL_QTY{1} = {2},",V.Local.sSQL,V.Local.iCntPlus,V.DataTable.dtControl(V.Local.iCnt).QTY!FieldVal,V.Local.sSQL)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Intrinsic.String.Build("{0} LOTSERIAL1 = '{1}', LOTSERIAL2 = '{2}', LOTSERIAL3 = '{3}', LOTSERIAL4 = '{4}', LOTSERIAL5 = '{5}', LOTSERIAL6 = '{6}', LOTSERIAL7 = '{7}', LOTSERIAL8 = '{8}', LOTSERIAL9 = '{9}', LOTSERIAL10 = '{10}'",V.Local.sSQL,V.DataTable.dtLotSerial(0).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(1).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(2).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(3).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(4).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(5).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(6).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(7).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(8).LOTSERIAL!FieldValTrim,V.DataTable.dtLotSerial(9).LOTSERIAL!FieldValTrim,V.Local.sSQL)
+	F.Intrinsic.String.Build("{0} where ORDER_NO = '{1}' and LINE = '{2}';",V.Local.sSQL,V.Screen.F_CertPrint!txtSOPrint.Text,V.DataTable.dtLine(0).ITEM!FieldValTrim,V.Local.sSQL)
+F.Intrinsic.Control.EndIf
+'use the insert or update statement to make cahnges to the DB
+F.ODBC.Connection!con.Execute(V.Local.sSQL)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+'Print Report
+V.Local.sParams.Set("Order*!*Line")
+F.Intrinsic.String.Build("{0}*!*{1}",V.Screen.F_CertPrint!txtSOPrint.Text,V.DataTable.dtLine(0).ITEM!FieldValTrim,V.Caller.Terminal,V.Local.sValues)
+F.Global.BI.GetIDFromName("GCG_5100_CERTCONFORM.RPT",V.Local.iCnt)
+F.Intrinsic.String.Split(V.Local.sParams,"*!*",V.Local.sParams)
+F.Intrinsic.String.Split(V.Local.sValues,"*!*",V.Local.sValues)
+F.Global.BI.PrintReport(V.Local.iCnt,16,V.Local.sParams,V.Local.sValues,"GSView",False)
+
+F.Intrinsic.Control.CallSub(F_CertPrint_UnLoad)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdPrint_Click.End
+
+Program.Sub.cmdRegen_Click.Start
+'Pulls information for last time cert was run for the specific SO/Line
+V.Local..BulkDeclareString(sError,sSO,sLine,sSQL)
+V.Local.iCnt.Declare(Long)
+F.Intrinsic.Control.Try
+
+Gui.F_CertPrint.framePrint.Enabled(False)
+Gui.F_CertPrint.cmdPrint.Enabled(False)
+
+V.Local.sSO.Set(V.Screen.F_CertPrint!txtSO.Text)
+V.Local.sLine.Set(V.Screen.F_CertPrint!txtLine.Text)
+
+'If entered values don't match format for sales orders and items, make them match
+F.Intrinsic.Control.If(V.Local.sSO.Length,!=,7)
+	F.Intrinsic.String.LPad(V.Local.sSO,"0",7,V.Local.sSO)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Local.sLine.Length,<,4)
+	F.Intrinsic.String.LPad(V.Local.sLine,"0",3,V.Local.sLine)
+F.Intrinsic.Control.ElseIf(V.Local.sLine.Length,=,4)
+	F.Intrinsic.String.Left(V.Local.sLine,3,V.Local.sLine)
+F.Intrinsic.Control.EndIf
+
+'Check if global tables are open
+F.Intrinsic.Control.If(V.DataTable.dtLine.Exists)
+	F.Data.DataTable.Close("dtLine")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.DataTable.dtControl.Exists)
+	F.Data.DataTable.Close("dtControl")
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.DataTable.dtLotSerial.Exists)
+	F.Data.DataTable.Close("dtLotSerial")
+F.Intrinsic.Control.EndIf
+
+'Extract data from custom table
+F.Intrinsic.String.Build("select ORDER_DATE, rtrim(CUST_PO) as CUST_PO, rtrim(CUST_SPECS) as CUST_SPECS, rtrim(SHIP_TO) as SHIP_TO, rtrim(COMMENTS) as COMMENTS, rtrim(INSPECTOR) as INSPECTOR, DATE1, DATE2 from GCG_5100_CERTCONFORM where ORDER_NO = '{0}' and LINE = '{1}';",V.Local.sSO,V.Local.sLine,V.Local.sSQL)
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Data.DataTable.CreateFromSQL("dtLoose","con",V.Local.sSQL)
+'Check to see if data exists in the custom DB table
+F.Intrinsic.Control.If(V.DataTable.dtLoose.RowCount,=,0)
+	F.Intrinsic.String.Build("No data exists for the selected certification of compliance for the Sales Order {0} and Item {1}",V.Local.sSO,V.Local.sLine,V.Local.sSQL)
+	F.Intrinsic.UI.Msgbox(V.Local.sSQL)
+	F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.Intrinsic.String.Build("select LINE as ITEM, QTY as QTY, rtrim(PART) as PART_NUMBER, rtrim(REV) as REV, rtrim(DESCRIPTION) as DESCRIPTION, ACC as ACC, REJ as REJ from GCG_5100_CERTCONFORM where ORDER_NO = '{0}' and LINE = '{1}';",V.Local.sSO,V.Local.sLine,V.Local.sSQL)
+F.Data.DataTable.CreateFromSQL("dtLine","con",V.Local.sSQL,True)
+F.Data.DataTable.CreateFromString("dtControl","","CONTROL*!*QTY","String*!*Float","*!*","#$#",True)
+F.Data.DataTable.DeleteRow("dtControl")
+F.Data.DataTable.CreateFromString("dtLotSerial","","LOTSERIAL","String","*!*","#$#",True)
+F.Data.DataTable.DeleteRow("dtLotSerial")
+'Since the control and serial info are stored on the same line in the DB, we will need to loop through and add them one by one
+F.Intrinsic.Control.For(V.Local.iCnt,1,10,1)
+	F.Intrinsic.String.Build("select rtrim(CONTROL_NO{0}) as CONTROL, IF(CONTROL_QTY{0} = 0, '', CONTROL_QTY{0}) as QTY, rtrim(LOTSERIAL{0}) as LOTSERIAL from GCG_5100_CERTCONFORM where ORDER_NO = '{1}' and LINE = '{2}';",V.Local.iCnt,V.Local.sSO,V.Local.sLine,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtTemp","con",V.Local.sSQL)
+	F.Data.DataTable.AddRow("dtControl","CONTROL",V.DataTable.dtTemp(0).CONTROL!FieldValTrim,"QTY",V.DataTable.dtTemp(0).QTY!FieldValTrim)
+	F.Data.DataTable.AddRow("dtLotSerial","LOTSERIAL",V.DataTable.dtTemp(0).LOTSERIAL!FieldValTrim)
+	F.Data.DataTable.Close("dtTemp")
+F.Intrinsic.Control.Next(V.Local.iCnt)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+'Add loose fields from DB and the close the loose DT
+Gui.F_CertPrint.txtSOPrint.Text(V.Local.sSO)
+Gui.F_CertPrint.dtpDate.Value(V.DataTable.dtLoose(0).DATE1!FieldVal)
+Gui.F_CertPrint.txtComments.Text(V.DataTable.dtLoose(0).COMMENTS!FieldValTrim)
+Gui.F_CertPrint.txtInspector.Text(V.DataTable.dtLoose(0).INSPECTOR!FIeldValTrim)
+Gui.F_CertPrint.dtpDateInsp.Value(V.DataTable.dtLoose(0).DATE2!FieldVal)
+Gui.F_CertPrint.txtShipTo.Text(V.DataTable.dtLoose(0).SHIP_TO!FieldValTrim)
+Gui.F_CertPrint.txtCustPO.Text(V.DataTable.dtLoose(0).CUST_PO!FieldValTrim)
+Gui.F_CertPrint.txtCustSpec.Text(V.DataTable.dtLoose(0).CUST_SPECS!FieldValTrim)
+Gui.F_CertPrint.dtpOrderDate.Value(V.DataTable.dtLoose(0).ORDER_DATE!FieldVal)
+F.Data.DataTable.Close("dtLoose")
+
+'create gridviews for the DTs
+Gui.F_CertPrint.gsGCLine.AddGridviewFromDatatable("gvLine","dtLine")
+Gui.F_CertPrint.gsGCControl.AddGridviewFromDatatable("gvControl","dtControl")
+Gui.F_CertPrint.gsGCLotSerial.AddGridviewFromDatatable("gvLotSerial","dtLotSerial")
+F.Intrinsic.Control.CallSub(GridViewStyle)
+Gui.F_CertPrint.gsGCLine.MainView("gvLine")
+Gui.F_CertPrint.gsGCControl.MainView("gvControl")
+Gui.F_CertPrint.gsGCLotSerial.MainView("gvLotSerial")
+
+'Enable fields for editing
+Gui.F_CertPrint.framePrint.Enabled(True)
+Gui.F_CertPrint.cmdPrint.Enabled(True)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdRegen_Click.End
+
+Program.Sub.cmdCust_Click.Start
+'Opens Customer Browser and then populates fields with data relevant to customer/part combo
+V.Local..BulkDeclareString(sError,sRet,sSQL)
+F.Intrinsic.Control.Try
+
+'Customer BRW
+F.Intrinsic.UI.Browser(205,"",V.Local.sRet)
+
+F.Intrinsic.Control.If(V.Local.sRet.IsCancel)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+Gui.F_CustConformCert.txtCust.Text(V.Local.sRet(0))
+Gui.F_CustConformCert.txtCustName.Text(V.Local.sRet(1))
+
+F.Intrinsic.Control.If(V.DataTable.dtText.Exists)
+	F.Data.DataTable.Close("dtText")
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.String.Build("select CUSTOMER, PART, TEXT1, TEXT2 from GCG_5100_CUSTCONFORM where CUSTOMER = '{0}' and PART = '{1}';",V.Screen.F_CustConformCert!txtCust.Text,V.Screen.F_CustConformCert!txtPart.Text,V.Local.sSQL)
+F.Intrinsic.Control.CallSub(OpenConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+F.Data.DataTable.CreateFromSQL("dtText","con",V.Local.sSQL,True)
+F.Intrinsic.Control.CallSub(CloseConnection,"sOtherSubroutine",V.Ambient.CurrentSubroutine)
+
+'Checks to see if customer/part combo have text saved already
+F.Intrinsic.Control.If(V.DataTable.dtText.RowCount,!=,0)
+	Gui.F_CustConformCert.txtText1.Text(V.DataTable.dtText(0).TEXT1!FieldValTrim)
+	Gui.F_CustConformCert.txtText2.Text(V.DataTable.dtText(0).TEXT2!FieldValTrim)
+F.Intrinsic.Control.Else
+	Gui.F_CustConformCert.txtText1.Text("")
+	Gui.F_CustConformCert.txtText2.Text("")
+	F.Data.DataTable.AddRow("dtText","CUSTOMER",V.Screen.F_CustConformCert!txtCust.Text,"PART",V.Screen.F_CustConformCert!txtPart.Text)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdCust_Click.End
+
+
